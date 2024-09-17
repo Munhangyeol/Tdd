@@ -14,11 +14,19 @@ public class CalculateTest {
     private double x1;
     private double x2;
     @Test
-    public void calculateTest(){
+    public void plusTest(){
         //given
         x1=random();
         x2=random();
         //when,then
        Assertions.assertEquals(calculateService.calculate(x1, x2, "+"),x1+x2);
+    }
+    @Test
+    public void minusTest(){
+       //given
+        x1=random();
+        x2=random();
+        //when,then
+        Assertions.assertEquals(calculateService.calculate(x1, x2, "-"),x1-x2);
     }
 }
