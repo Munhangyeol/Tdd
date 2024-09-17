@@ -10,7 +10,8 @@ public class CalculateService {
             case "+" -> x1 + x2;
             case "-" -> x1 - x2;
             case "x" -> x1 * x2;
-            default -> 0;
+            case "/"->x1/x2;
+            default -> throw new IllegalStateException("Unexpected value: " + operater);
         };
     }
 }

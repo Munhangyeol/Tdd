@@ -37,4 +37,12 @@ public class CalculateTest {
         //when,then
         Assertions.assertEquals(calculateService.calculate(x1, x2, "x"),x1*x2);
     }
+    @Test
+    public void divideTest(){
+        //given
+        x1=random();
+        x2=random();
+        //when,then
+        Assertions.assertEquals(calculateService.calculate(x1, x2, "/"),x1/x2);
+    }
 }
